@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Finder</title>
+        <h:outputStylesheet name="css/datingcss.css"  />
+        <meta name="author" content="The Author"></meta>         
+      <link  rel="stylesheet" type="text/css" href="css/datingcss.css?ln=css" />
+    </h:head>
+    <h:body class="LayoutBody" style="background-image: url('images/BlackWhite.jpg');height: 100%;">
+ <div id="header">
+		<ui:insert name="header" >
+		  <ui:include src="/headerWelcome.xhtml" />
+		</ui:insert>
+	    </div>
+        <b:container>
+            <br></br><br/><br/><br></br><br/>
+           <h:form>
+          <b:dropButton look="success" value="Blog">
+  <b:navLink value="Write a Blog" href="writeBlog.xhtml"></b:navLink>
+  <b:navLink value="View all Blog" href="ViewBlog.xhtml"></b:navLink>
+  <b:navLink  value="Show my Blog" href="MyBlog.xhtml"></b:navLink>
+ </b:dropButton><br/><br/>
+          <b:navLink href="top3.xhtml" icon="link">Top Profiles</b:navLink><br/><br/>
+           <b:navLink href="search.xhtml" icon="link">Search</b:navLink><br/><br/>
+           <b:navLink href="Notification.xhtml" icon="link">Notifications</b:navLink><br/><br/>
+           <b:navLink href="Friends.xhtml" icon="link">Your Dates</b:navLink><br/><br/>
+             
+          
+<b:dropButton look="success" value="Messenger">
+  <b:navLink value="New Message" href="MessageNotification.xhtml"></b:navLink>
+  <b:navLink value="Old Message" href="OldMessages.xhtml"></b:navLink>
+</b:dropButton>
+            <br></br><br/>
+            <b:navLink icon="link" href="newPasswordSetup.xhtml">Reset Password</b:navLink><br/><br/>           
+              <b:navLink icon="link" href="viewProfile.xhtml">View Profile</b:navLink><br/><br/>           
+              <b:navLink icon="link" href="#{login.logout()}">logout</b:navLink>
+            
+        </h:form> 
+        </b:container>
+        
+        
+        <footer name="footer">
+        <div class="FinderFooter footer-copyright text-center py-3 ">© 2019 Copyright: <a> DatingWithFinder.com</a> </div>
+        </footer>
+    </h:body>
+</html>
+
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+     <h:head>
+        <title>Search</title>
+        <h:outputStylesheet name="css/datingcss.css"  />
+        <meta name="author" content="The Author"></meta>         
+      <link  rel="stylesheet" type="text/css" href="css/datingcss.css?ln=css" />
+    </h:head>
+        <h:body class="LayoutBody" style="background-image: url('images/BlackWhite.jpg');height: 100%;">
+
+        <div id="header">
+		<ui:insert name="header" >
+		  <ui:include src="/headerWelcome.xhtml" />
+		</ui:insert>
+	    </div><br/><br/><br/><br/><br/><br/>
+               <b:container>
+ <div  >
+            <h:form><p>Gender:<br></br><h:inputText id="gender" required="true" requiredMessage="gender cannot be empty" title="Enter your criteria" value="#{top3.input}"></h:inputText></p>
+               
+                <p>Enter city:<br></br> <h:inputText id="city" required="true" requiredMessage="City cannot be empty" title="Enter your criteria" value="#{top3.input3}"></h:inputText></p>
+                <br></br>
+                <p>
+                    MIN AGE:
+                    <h:inputText id="age" required ="true" requiredMessage="Age cannot be empty"
+                                 
+                                 
+                                 value="#{top3.input1}">
+                        
+                    </h:inputText>
+                     MAX AGE:
+                    <h:inputText id="age2" required ="true" requiredMessage="Age cannot be empty"
+                                 
+                                 
+                                 value="#{top3.input2}">
+                        
+                    </h:inputText>
+                </p>
+               <p>Interest:<br></br>
+                    <h:inputText id="interests" required ="true" 
+                                 requiredMessage="Interest cannot be empty"
+                                 title="Please enter the interest"
+                                 value="#{top3.input4}">
+
+                    </h:inputText>
+                </p>
+
+                <h:commandButton class="btn btn-primary" id="submit"  value="Search" action="#{top3.search()}"/> 
+        </h:form>
+        </div>   
+        </b:container>
+        <div id="footer">
+	    	<ui:insert name="footer" >
+	    	  <ui:include src="/commonFooter.xhtml" />
+	    	</ui:insert>
+    	    </div>
+    </h:body>
+</html>

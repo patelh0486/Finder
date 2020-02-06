@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Forgot Password</title>
+    </h:head>
+    <h:body>
+ <div id="header">
+		<ui:insert name="header" >
+		  <ui:include src="/headerWelcome.xhtml" />
+		</ui:insert>
+	    </div><br/><br/><br/><br/><br/><br/>
+               <b:container>
+			                 <h:form>
+            <h1>Registration </h1>
+            <h3>Please follow the instructions:</h3>
+           User ID: <b:inputText title="UserID" value="#{test.id}"></b:inputText><br/>
+           Password: <b:inputText title="UserID" value="#{test.psw}"></b:inputText><br/>
+           Gender: <b:inputText title="UserID" value="#{test.gender}"></b:inputText><br/>
+              
+                <h:commandButton style="width:100%;" value="submit" action="#{test.test1()}"/>
+                  
+        </h:form>
+        </b:container>
+            	    <br/><br/><br/><br/><br/><br/>
+
+        <div id="footer">
+	    	<ui:insert name="footer" >
+	    	  <ui:include src="/commonFooter.xhtml" />
+	    	</ui:insert>
+    	    </div>
+    </h:body>
+</html>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>top_profiles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link type="text/css" rel="stylesheet" href="style.css"></link>
+    </h:head>
+    <style>
+    body {
+    
+    overflow: hidden;
+    position: relative;
+    display: block;
+    float: left;
+}
+a:active{
+    color: white;
+}
+div:hover{
+    color: black;
+   
+}
+a:visited{
+    color:white
+}
+
+
+
+    </style>
+
+
+    <h:body style="height:1000px;width: 100%">
+ <div id="header">
+		<ui:insert name="header" >
+		  <ui:include src="/headerWelcome.xhtml" />
+		</ui:insert>
+	    </div><br/><br/><br/><br/><br/><br/>
+               <b:container>
+
+     <div style="height:100%;width: 100%">
+            <a href="./searchtop_users.xhtml"><div class="a" style="height: 100%;width: 50%;display: inline-block;background-color: #7ddbff;"><h1 style="margin-left:37%">MALE</h1></div></a>
+            <a href="./searchtop_user_female.xhtml"><div  class="a" style="height: 100%;width: 50%;display: inline-block;float: right;background-color: pink;"><h1 style="margin-left:37%">FEMALE</h1>
+            </div></a>
+        </div>
+		
+        </b:container>
+        <div id="footer">
+	    	<ui:insert name="footer" >
+	    	  <ui:include src="/commonFooter.xhtml" />
+	    	</ui:insert>
+    	    </div>
+    </h:body>
+    
+</html>

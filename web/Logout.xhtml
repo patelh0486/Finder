@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Forgot Password</title>
+    </h:head>
+    <h:body>
+      <b:navBar  brandHref="" fixed="top" inverse="true"> <a class="navbar-brand"  style="padding:0px"><img src="images/logo4.png" alt="Finder" align="left"></img></a>
+            <b:navbarLinks>
+                <b:navLink value="Home" href="newLogin.xhtml"></b:navLink>
+                <b:navLink value="About us" href="aboutUs.xhtml"></b:navLink>
+            </b:navbarLinks>
+        </b:navBar><br/><br/><br/><br/><br/><br/>
+               <b:container>
+<h:form>
+            <h2>Successfully Logged Out</h2>
+            <p><a href="newLogin.xhtml">Login Again</a></p>
+        </h:form>
+
+        </b:container>
+        <div id="footer">
+	    	<ui:insert name="footer" >
+	    	  <ui:include src="/commonFooter.xhtml" />
+	    	</ui:insert>
+    	    </div>
+    </h:body>
+</html>
+

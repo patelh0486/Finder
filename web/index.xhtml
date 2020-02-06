@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+          
+      xmlns:b="http://bootsfaces.net/ui">
+
+    <h:head>
+	<h:outputStylesheet name="common-style.css" library="css" />
+      
+    </h:head>
+    
+    <h:body>
+ <h:body>
+
+	<div id="page">
+		
+	    <div id="header">
+		<ui:insert name="header" >
+		  <ui:include src="/headerLogin.xhtml" />
+		</ui:insert>
+	    </div>
+	    <br/><br/><br/><br/><br/><br/>
+            
+	    <div id="content">
+	  	<h:form>
+             <div class="dropdown">
+           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Blog </button>
+c
+           </div><br/>    <br/><br/><br/><br/><br/><br/>
+           <a href="top3.xhtml">Top Profiles</a><br/><br/>
+           <a href="search.xhtml">Search</a><br/><br/>
+           <a href="Notification.xhtml">Notifications</a><br/><br/>
+            <a href="Friends.xhtml">Your Dates</a><br/><br/>
+             
+          
+          <div class="dropdown">
+           <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> Messenger </button>
+           <div class="dropdown-menu">
+                <a class="dropdown-item" href="MessageNotification.xhtml">New Messages</a>
+                 <a class="dropdown-item" href="OldMessages.xhtml">Old Message</a>
+               </div>
+           </div>
+            <br></br>
+           <a href="newPasswordSetup.xhtml">Reset Password</a><br/><br/>           
+           <h:commandLink action="#{login.logout()}">logout</h:commandLink>
+            
+        </h:form> 
+	    </div>
+		    
+	    <div id="footer">
+	    	<ui:insert name="footer" >
+	    	  <ui:include src="/commonFooter.xhtml" />
+	    	</ui:insert>
+    	    </div>
+
+        </div>
+
+    </h:body>
+    </h:body>
+</html>

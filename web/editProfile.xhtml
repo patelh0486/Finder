@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Forgot Password</title>
+    </h:head>
+    <h:body><br/><br/><br/><br/><br/>
+               <b:container><h:form>
+   Interest1 <b:inputText value="#{login.interests1}"></b:inputText>
+   Interest2 <b:inputText value="#{login.interests2}"></b:inputText>
+    Interest3<b:inputText value="#{login.interests3}"></b:inputText>
+    First Name<b:inputText value="#{login.first_name}"></b:inputText>
+    Last Name<b:inputText value="#{login.last_name}"></b:inputText>
+    City<b:inputText value="#{login.city}"></b:inputText>
+    Occupation<b:inputText value="#{login.occupation}"></b:inputText>
+     Bio<b:inputText value="#{login.bio}"></b:inputText>
+     
+         <h:commandButton value="submit" action="#{login.test2()}"/>
+</h:form>
+        </b:container>
+
+    </h:body>
+</html>
+

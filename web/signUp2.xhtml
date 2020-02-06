@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>test</title>
+    </h:head>
+    <h:body>
+        <p>Account Successfully Created</p>
+        /* Second registration page where user will enter the details about
+        the other required details        */
+        <h:form>
+           First Name: <h:inputText title="UserID" value="#{test.fname}"></h:inputText><br/>
+           Last Name:<h:inputText title="Password" value="#{test.lname}"></h:inputText><br/>
+           Age:<h:inputText title="Age" value="#{test.age}"></h:inputText><br/>
+           City:<h:inputText title="Age" value="#{test.city}"></h:inputText><br/>
+           Interest 1/3<h:inputText title="Age" value="#{test.int1}"></h:inputText><br/>
+           Interest 2/3:<h:inputText title="Age" value="#{test.int2}"></h:inputText><br/>
+           Interest 3/3:<h:inputText title="Age" value="#{test.int3}"></h:inputText><br/>
+           Occupation:<h:inputText title="Age" value="#{test.occ}"></h:inputText><br/>
+           Bio:<h:inputText title="Age" value="#{test.bio}"></h:inputText><br/>
+           Security Question: <h:inputText title="Age" value="#{test.que}"></h:inputText><br/>
+           Answer: <h:inputText title="Age" value="#{test.ans}"></h:inputText><br/>
+           <h:commandButton value="submit" action="#{test.test2()}"/>
+            
+        </h:form>
+    </h:body>
+</html>

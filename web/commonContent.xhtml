@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    >
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+      <h:form>
+        <b:container fluid="true"  >
+  <b:row>
+    <b:column medium-screen="2">
+      <h:outputText value="Username:"/>
+    </b:column>
+    <b:column medium-screen="4">
+      <b:inputText value="#{login.id}" />
+    </b:column>
+    <b:column medium-screen="6">
+      <b:message/>
+    </b:column>
+  </b:row>
+  <b:row>
+    <b:column medium-screen="2">
+      <h:outputText value="Password:" />
+    </b:column>
+    <b:column medium-screen="4">
+      <b:inputSecret value="#{login.psw}"/>
+    </b:column>
+    <b:column medium-screen="6">
+      <b:message />
+    </b:column>
+  </b:row>
+  <b:row>
+    <b:column span="2" offset="2">
+      <b:commandButton action="#{login.signin()}" look="primary" style="width:100%;" value="Login"/>
+    </b:column>
+    <b:column span="2">
+      <b:commandButton  look="danger" style="width:100%" value="Cancel" />
+    </b:column>
+      </b:row>
+ 
+            <b:row>
+      <b:column span="4" offset="2">
+       <b:commandButton action="index_forgetPassword.xhtml"  look="warning" style="width:100%" value="Forget Password" />
+       </b:column>
+  </b:row>
+             <b:row>
+      <b:column span="4" offset="2">
+     <b:commandButton action="registration.xhtml" look="primary" id="b_commandButtonid" value="Need an Account Click here"/>
+       </b:column>
+  </b:row>
+</b:container>
+ </h:form>
+    </body>
+</html>

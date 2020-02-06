@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>Finder</title>
+      <link href="css/w3.css" rel="stylesheet" type="text/css"/>
+        <link href="css/datingcss.css" rel="stylesheet" type="text/css"/>
+
+    
+      
+    </h:head>
+    <h:body class="LayoutBody" style="background-image: url('images/BlackWhite.jpg');height: 100%;">
+       
+        
+        <div id="header">
+		<ui:insert name="header" >
+		  <ui:include src="/headerLogin.xhtml" />
+		</ui:insert>
+	    </div>
+	    <br/><br/><br/><br/><br/><br/>
+        <b:container>
+            
+            <div class="cont col-sm-6" style="background-color: darkgray">
+                
+                    <div class="searchbox">
+                        <h3>
+                            Find Your Perfect Match
+                        </h3>
+                    </div>
+              
+                   
+                
+                    
+                <b:form>
+                       
+                            <div class="row">
+                                <div class="col-sm-12" style="margin-top: 1%">
+                                    <div class="col-sm-6">
+                                <div class="username name"><b>User Name</b></div>
+                                  <b:inputText value="#{login.id}" />
+                            </div>
+                                <div class="col-sm-6">
+                                    <div class="password name" ><b>Password</b></div>
+                                    <b:inputSecret value="#{login.psw}"/>
+                                </div>
+                                        
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-sm-12 forgotpwd" >
+                                     <b:commandLink action="index_forgetPassword.xhtml"  value="Forget Password" />
+                                </div>
+                            </div>
+                            
+                        
+                    
+                        
+                            <div class="row">
+                                <div class="col-sm-12" style="margin-top: 2%">
+                                <div class="col-sm-6">
+                                      <b:commandButton action="#{login.signin()}"  class="btn btn-md btn-info"  value="Login"/>
+                              
+                                </div>
+                                <div class="col-sm-6">
+                              
+                                <b:commandButton action="registration.xhtml" class="btn btn-md btn-info"  id="b_commandButtonid" value="Need an Account Click here"/>
+                            </div>
+                            </div>
+                            </div>                          
+            </b:form>        
+                                                     
+             </div>
+                   </b:container>
+           <div id="footer">
+	    	<ui:insert name="footer" >
+	    	  <ui:include src="/commonFooter.xhtml" />
+	    	</ui:insert>
+    	    </div>
+        
+        <footer name="footer">
+        <div class="FinderFooter footer-copyright text-center py-3 ">© 2019 Copyright: <a> DatingWithFinder.com</a> </div>
+        </footer>
+    </h:body>
+</html>
+
+

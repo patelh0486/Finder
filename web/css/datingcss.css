@@ -1,0 +1,189 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 5 Nov, 2019, 6:27:03 PM
+    Author     : hinal
+*/
+
+/*/////////////////layout//////////////////////////////*/
+.LayoutBody{    
+    height: 100%;
+    width:100%;  
+    background: url("images/BlackWhite.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+   font-family: 'sansregular';
+    font-size: 16px;
+     
+}
+
+.cont {
+   background-color: whitesmoke;
+    opacity: 0.9;
+    font-family: cursive;
+}
+
+
+.FinderFooter{  
+    background-color: buttonface;
+    color: grey;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.FinderContainer{
+    width: 60%;
+    height:60;
+    float:none;
+    position: relative;    
+}
+
+/*///////////////////////////Login Page/////////////////*/
+
+.selectcontrol{
+    border: 1px solid #979797;
+    border-right: 1px solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    background: white;
+    text-indent: 10px;
+}
+
+.options:after{
+    content: '\f107';
+    font: normal normal normal 22px/1 FontAwesome;
+    color: #033C73;
+    right: 18px;
+    top: 30px;
+    height: auto;
+    padding: 0;
+    position: absolute;
+    pointer-events: none;
+    background: #fff;
+    
+}
+
+.searchbox h3{
+    color:#033C73;
+    font-family: "Brush Script MT", cursive;
+    font-size: 40px;
+    padding-left: 1.5%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.forgotpwd a{
+    color:#404040;
+    margin-left: 53.5%;
+}
+
+.name{
+   color:darkslategray;
+}
+
+/*---------------Logout-----------------------------*/
+.logout{
+    margin-top: 6px;
+    right:0px;
+}
+
+/*---------------uploading image in blog -----------------------------*/
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Request table design*/
+
+.FinderTable{
+    
+   width: 900px;
+    animation-direction: alternate;
+}
+
+/*----------------------Message--------------------------------------*/
+.NameTd{
+    width:300px;
+    height: 100px;
+    
+}
+.MessageTd{
+    width:300px;
+    height: 100px;
+}
+#MessageBox{
+    text-align: center;
+    color: darkgreen;
+    font-family: cursive;
+    margin-top: 10px;
+    display: none;
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
+    background-color: darkgray;
+    opacity: 0.9;
+    border-radius: 10%;
+
+}
+#SendMessage{
+    text-align: center;
+    color: darkgreen;
+    font-family: cursive;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
+    background-color: darkgray;
+    opacity: 0.9;
+    border-radius: 10%;
+}
+#DeleteMsg{
+    width:fit-content;
+    height:20px;
+    top:30px;
+    position: relative;
+     display:block;
+    color: greenyellow;
+    background-color: green;
+    opacity: 0.8;
+}
+
+
+
+
+
+
